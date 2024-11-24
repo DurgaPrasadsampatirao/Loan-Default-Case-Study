@@ -5,24 +5,24 @@ Managing loan defaults is a critical challenge for lending institutions, impacti
 # Data description
  - IDIdfor each row
  - yearyear when the loan was taken
- ● loan_limit if the loan limit is fixed or variable cf-confirm/fixed, ncf- not confirm/not fixed
- ● Gendergender of the applicant, can be male female, not specified, joint (in case of applling as a couple for home loan)
- ● loan_type type of loan (masked data ) type-1, type-2, type-3
- ● loan_purpose purpose of the loan (masked data ) p1,p2,p3,p4
- ● business_or_commercial if the loan is for sommercial establishment or personal establishment
- ● loan_amount amount of the loan
- ● rate_of_interest rate of interest for the loan
- ● Upfront_charges down payment done by the applicant
- ● property_value value of the property being constructed for which the loan is taken
- ● occupancy_type for the establishment
- ● incomeincome of the applicant
- ● credit_type 'EXP' 'EQUI' 'CRIF' 'CIB'
- ● Credit_Score credit score of applicant
- ● co-applicant_credit_type credit type for co-applicant
- ● ageageofapplicant
- ● LTVlifetime value of the applicant
- ● Region region of the applicant
- ● Status defaulter(1) or normal(0)
+ - loan_limit if the loan limit is fixed or variable cf-confirm/fixed, ncf- not confirm/not fixed
+ - Gendergender of the applicant, can be male female, not specified, joint (in case of applling as a couple for home loan)
+ - loan_type type of loan (masked data ) type-1, type-2, type-3
+ - loan_purpose purpose of the loan (masked data ) p1,p2,p3,p4
+ - business_or_commercial if the loan is for sommercial establishment or personal establishment
+ - loan_amount amount of the loan
+ - rate_of_interest rate of interest for the loan
+ - Upfront_charges down payment done by the applicant
+ - property_value value of the property being constructed for which the loan is taken
+ - occupancy_type for the establishment
+ - incomeincome of the applicant
+ - credit_type 'EXP' 'EQUI' 'CRIF' 'CIB'
+ - Credit_Score credit score of applicant
+ - co-applicant_credit_type credit type for co-applicant
+ - ageageofapplicant
+ - LTVlifetime value of the applicant
+ - Region region of the applicant
+ - Status defaulter(1) or normal(0)
 
 # Recommendations for Each Column
 
