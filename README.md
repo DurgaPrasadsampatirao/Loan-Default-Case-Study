@@ -6,7 +6,7 @@ This project focuses on analyzing loan default behavior in financial institution
 ### Project Links:
 - **[Loan Default Video Explanation](https://www.loom.com/share/832b6dfcd0114a4594248cc819d581b9?sid=b5180c17-552a-45c1-b6c2-78d9edf36263)**: A video explanation of the project and the analysis approach.
 - **[Loan Default PowerPoint Presentation](https://docs.google.com/presentation/d/1Zw29WWsGjmAoNAjUeZjelHN8fkpzBWiP/edit?usp=sharing&ouid=101489019060101927702&rtpof=true&sd=true)**: The PowerPoint presentation summarizing the project and key findings.
-
+- **[Overall file link](https://drive.google.com/drive/folders/1K0r-mIFbuAhTWcWY24LTQyhIzVGoi4wl?usp=sharing)**: An overall link for all....
 ---
 
 ## Key Objectives
