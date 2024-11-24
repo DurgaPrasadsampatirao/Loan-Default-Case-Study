@@ -3,8 +3,8 @@ Managing loan defaults is a critical challenge for lending institutions, impacti
 
 
 # Data description
- ● IDIdfor each row
- ● yearyear when the loan was taken
+ - IDIdfor each row
+ - yearyear when the loan was taken
  ● loan_limit if the loan limit is fixed or variable cf-confirm/fixed, ncf- not confirm/not fixed
  ● Gendergender of the applicant, can be male female, not specified, joint (in case of applling as a couple for home loan)
  ● loan_type type of loan (masked data ) type-1, type-2, type-3
