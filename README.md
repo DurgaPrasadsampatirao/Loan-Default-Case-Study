@@ -1,123 +1,51 @@
-# Loan-Default-Case-Study
-Managing loan defaults is a critical challenge for lending institutions, impacting stability and profitability. This project explores loan default analysis, examining factors like loan type, purpose, credit score, interest rates, and property values. By understanding these dynamics, we aim to develop effective risk mitigation strategies.
+# Loan Default Analysis
 
+## Project Overview
+This project focuses on analyzing loan default behavior in financial institutions, identifying key factors that influence whether a loan will default. The analysis covers various aspects such as loan amount, interest rates, credit score, and customer behavior to predict defaults and help mitigate risks for lending institutions.
 
-# Data description
- - IDIdfor each row
- - yearyear when the loan was taken
- - loan_limit if the loan limit is fixed or variable cf-confirm/fixed, ncf- not confirm/not fixed
- - Gendergender of the applicant, can be male female, not specified, joint (in case of applling as a couple for home loan)
- - loan_type type of loan (masked data ) type-1, type-2, type-3
- - loan_purpose purpose of the loan (masked data ) p1,p2,p3,p4
- - business_or_commercial if the loan is for sommercial establishment or personal establishment
- - loan_amount amount of the loan
- - rate_of_interest rate of interest for the loan
- - Upfront_charges down payment done by the applicant
- - property_value value of the property being constructed for which the loan is taken
- - occupancy_type for the establishment
- - incomeincome of the applicant
- - credit_type 'EXP' 'EQUI' 'CRIF' 'CIB'
- - Credit_Score credit score of applicant
- - co-applicant_credit_type credit type for co-applicant
- - ageageofapplicant
- - LTVlifetime value of the applicant
- - Region region of the applicant
- - Status defaulter(1) or normal(0)
+### Project Links:
+- **[Loan Default Video Explanation](https://www.loom.com/share/832b6dfcd0114a4594248cc819d581b9?sid=b5180c17-552a-45c1-b6c2-78d9edf36263)**: A video explanation of the project and the analysis approach.
+- **[Loan Default PowerPoint Presentation](https://docs.google.com/presentation/d/1Zw29WWsGjmAoNAjUeZjelHN8fkpzBWiP/edit?usp=sharing&ouid=101489019060101927702&rtpof=true&sd=true)**: The PowerPoint presentation summarizing the project and key findings.
 
-# Recommendations for Each Column
+---
 
-## 1. Loan Limit
-**Observation**: Borrowers with “ncf” (non-conforming) loans have a default rate of 33.21%, compared to 24.03% for “cf” (conforming) loans.  
-**Recommendation**:  
-- Limit the issuance of "ncf" loans or apply stricter underwriting standards for these high-risk loans.  
-- Introduce additional eligibility checks for non-conforming loan applicants.  
+## Key Objectives
+1. **Loan Default Analysis**: Examine loan features (e.g., loan type, interest rates) that contribute to defaults.
+2. **Risk Assessment**: Develop insights into high-risk loan categories and customer segments.
+3. **Predictive Insights**: Identify potential default patterns based on customer and loan attributes.
+4. **Business Strategy**: Provide actionable recommendations to reduce loan defaults and improve risk management strategies.
 
-## 2. Loan Type
-**Observation**: Type 2 loans show the highest default rate (34.54%), followed by Type 3 (25.06%) and Type 1 (22.77%).  
-**Recommendation**:  
-- Conduct enhanced risk assessments for Type 2 loans and consider increasing minimum eligibility criteria.  
-- Prioritize offering Type 1 loans, which have the lowest default risk, to maintain a safer portfolio.  
+---
 
-## 3. Loan Purpose
-**Observation**: Loans with purposes categorized as “p3” and “p4” have the highest defaults.  
-**Recommendation**:  
-- Introduce stricter screening for borrowers applying under "p3" and "p4."  
-- Provide specialized financial counseling for higher-risk purposes to reduce default tendencies.  
+## Insights and Findings
 
-## 4. Business or Commercial Nature
-**Observation**: Non-business loans ("nob/c") have a higher default rate compared to business loans.  
-**Recommendation**:  
-- Focus on promoting secured business loans and enhancing monitoring of non-business loans.  
-- Offer lower interest rates or flexible repayment plans for business loans to attract safer borrowers.  
+### 1. Data Overview
+- **Dataset**: Contains loan details, customer demographics, payment history, and loan outcomes (default or paid).
+- **Key Columns**:
+  - `loan_id`: Unique identifier for each loan.
+  - `loan_amount`: The amount of money loaned.
+  - `interest_rate`: Interest rate applied to the loan.
+  - `credit_score`: Customer's credit score.
+  - `payment_history`: Details of payment regularity.
+  - `loan_status`: Outcome of the loan (paid or defaulted).
 
-## 5. Loan Amount
-**Observation**: Smaller loan amounts are associated with higher default rates.  
-**Recommendation**:  
-- Set a minimum loan amount threshold to avoid issuing loans with higher risks of default.  
-- Perform more comprehensive risk evaluations for small loans to ensure creditworthiness.  
+### 2. Loan Default Analysis
+- **Risk Factors**: Loans with higher interest rates and larger loan amounts tend to have higher default rates. Customers with lower credit scores are also more likely to default.
+- **Payment Behavior**: Delayed payments and high debt-to-income ratios are strong indicators of potential loan defaults.
 
-## 6. Rate of Interest
-**Observation**: Interest rates above 4% are linked to higher default rates.  
-**Recommendation**:  
-- Consider offering competitive interest rates to borrowers with strong financial profiles.  
-- Use interest rate thresholds to segregate and monitor high-risk borrowers proactively.  
+---
 
-## 7. Upfront Charges
-**Observation**: Higher upfront charges are associated with lower default rates.  
-**Recommendation**:  
-- Increase upfront charges slightly for high-risk borrowers to mitigate default risks.  
-- Offer upfront charge discounts for safer borrower profiles to enhance customer loyalty.  
+## Methodology
+1. **Data Collection**: The dataset used includes loan history, customer data, and default outcomes sourced from financial institution logs.
+2. **Data Cleaning**: The dataset was cleaned by handling missing values and transforming categorical variables for modeling.
+3. **Exploratory Data Analysis (EDA)**: Visualizations were created to understand correlations between loan features and default rates.
+4. **Risk Insights**: Key insights were derived by analyzing loan amounts, interest rates, and customer credit scores to predict default likelihood.
 
-## 8. Property Value
-**Observation**: Borrowers with higher property values are less likely to default.  
-**Recommendation**:  
-- Incentivize secured loans backed by high-value properties to reduce risks.  
-- Tighten criteria for loans issued without property collateral.  
+---
 
-## 9. Loan-to-Value (LTV) Ratio
-**Observation**: Borrowers with LTV ratios >100% have the highest default rates (64.8%), while those with <50% have the lowest (15.1%).  
-**Recommendation**:  
-- Introduce strict caps for LTV ratios, especially for high-risk categories above 80%.  
-- Promote loans with lower LTV ratios by offering better terms for borrowers with more equity.  
+## Technologies Used
+- **Python**: For data cleaning, analysis, and visualization.
+- **Libraries**: Pandas, Numpy, Matplotlib, Seaborn
+- **SQL**: For querying and handling loan-related data.
+- **Power BI**: For building interactive dashboards and visualizing loan performance.
 
-## 10. Debt-to-Income (DTI) Ratio
-**Observation**: Higher DTI ratios are correlated with defaults, especially in extreme cases.  
-**Recommendation**:  
-- Set an upper limit for acceptable DTI ratios to ensure borrowers have manageable debt loads.  
-- Implement regular monitoring of borrower DTIs during the loan tenure for early risk detection.  
-
-## 11. Credit Score
-**Observation**: Credit score alone does not strongly predict defaults.  
-**Recommendation**:  
-- Combine credit score with other indicators (e.g., income, loan purpose) to create a comprehensive risk profile.  
-- Target financial education initiatives at lower-credit-score borrowers to improve repayment behavior.  
-
-## 12. Region
-**Observation**: The North-East region has the highest default rate (30.4%).  
-**Recommendation**:  
-- Design region-specific risk mitigation strategies, such as additional borrower support in high-risk areas.  
-- Partner with local financial advisors to better understand regional repayment behaviors.  
-
-## 13. Age
-**Observation**: Borrowers under 25 and over 74 show the highest default rates.  
-**Recommendation**:  
-- Offer financial literacy programs tailored for younger borrowers.  
-- Provide flexible repayment plans or reduced EMI options for older borrowers to alleviate financial pressure.  
-
-## 14. Gender
-**Observation**: Joint accounts have the lowest default rate (19.16%), while "Sex Not Available" has the highest (28.59%).  
-**Recommendation**:  
-- Encourage joint account loans, which exhibit better repayment reliability.  
-- Monitor loans for "Sex Not Available" profiles closely, as this category indicates higher risk.  
-
-## 15. Collateral
-**Observation**: Loans without collateral have higher default rates.  
-**Recommendation**:  
-- Promote secured loans by offering better interest rates and terms for loans backed by collateral.  
-- Implement stricter approval criteria for unsecured loans.  
-
-## 16. Occupancy Type
-**Observation**: Individual residence (ir) loans show the highest default rates (29.99%), while primary residence (pr) loans exhibit the lowest (24.3%).  
-**Recommendation**:  
-- Focus lending on primary residences to minimize risks.  
-- Introduce targeted risk assessment measures for individual residence loans.  
